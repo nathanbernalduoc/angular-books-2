@@ -1,0 +1,148 @@
+@media screen and (min-width: 800px) {
+    body {
+        background-image: url('../images/fondo1.jpeg');
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    }
+    :root {
+        --blanco: white;
+    }
+    h3, article {
+        color:  var(--blanco);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: url('../images/fondo2.jpg');
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    }
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+header {
+    background-color:darkgreen;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #3ead47;
+}
+
+main {
+    margin-top: 80px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    align-content: center;
+    background-color: #3ead47;
+}
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+article {
+    border: 1px red solid;
+    float: left;
+    width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* animaciones */
+
+/* Botones al poner mouse sobre */
+a {
+    background:#3ead47;
+    transition: background ease-in .3s;
+}
+a:hover {
+    background-color: darkgreen;
+}
+
+/* se aplica movimiento a imagen dentro de las categorias */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.element {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Se aplica color de rotacoión */
+@keyframes titulo_fondo {
+    from {background-color:cornflowerblue;}
+    to {background-color: yellow;}
+  }
+  
+  /* Al cliquear se fija el color*/
+ .titulo {
+    width: 100%;
+    height: 100px;
+    background-color:darkcyan;
+    animation-name: titulo_fondo;
+    animation-duration: 4s;
+  }
+
